@@ -5,9 +5,10 @@ local Window = Library.CreateLib("Spin For Free | Made by Sthingel", "Ocean")
 local Autofarm = Window:NewTab("Autofarm")
 local AutofarmSection = Autofarm:NewSection("Autofarm")
 
-AutofarmSection:NewToggle("Autofarm", "Autofarms the Impossible Obby", function(state)
+AutofarmSection:NewToggle("Autofarm", "Autofarms the Impossible Obby.", function(state)
     if state then
-        print("Toggle On")
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+print(pl.CFrame)
     else
         print("Toggle Off")
     end
