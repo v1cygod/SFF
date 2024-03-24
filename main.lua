@@ -7,13 +7,14 @@ local AutofarmSection = Autofarm:NewSection("Autofarm")
 
 AutofarmSection:NewToggle("Autofarm", "Autofarms the Impossible Obby.", function(state)
     if state then
+while true do
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 local location = CFrame.new(-169, 3, -17)
 local humanoid = game.Players.LocalPlayer.Character.Humanoid
 humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 wait(0.5)
 pl.CFrame = location
-loop
+
     else
             
     end
