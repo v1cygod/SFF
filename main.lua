@@ -8,8 +8,11 @@ local AutofarmSection = Autofarm:NewSection("Autofarm")
 AutofarmSection:NewToggle("Autofarm", "Autofarms the Impossible Obby.", function(state)
     if state then
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-print(pl.CFrame)
+local location = CFrame.new(-169.297974, 4.81721306, -17.2135334)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
     else
-        print("Toggle Off")
     end
 end)
