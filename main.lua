@@ -14,8 +14,7 @@ local humanoid = game.Players.LocalPlayer.Character.Humanoid
 humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 wait(0.5)
 pl.CFrame = location
-
     else
-            
+        print("Toggle Off")
     end
 end)
