@@ -6,7 +6,6 @@ local Autofarm = Window:NewTab("Autofarm")
 local AutofarmSection = Autofarm:NewSection("Autofarm")
 
 AutofarmSection:NewToggle("Autofarm", "Autofarms the Impossible Obby.", function(state)
-while true do
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 local location = CFrame.new(-169, 3, -17)
 local humanoid = game.Players.LocalPlayer.Character.Humanoid
