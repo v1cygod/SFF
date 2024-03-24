@@ -13,6 +13,7 @@ local humanoid = game.Players.LocalPlayer.Character.Humanoid
 humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 wait(0.1)
 pl.CFrame = location
+loop
     else
             
     end
